@@ -22,7 +22,7 @@ variable "private_subnets" {
 variable "aws_availability_zones" {
     description = "list of availability zones"
     type = list(string)
-    default = [ "us-east-1a", "us-east-1b", "us-east-1c", "us-east-1d", "us-east-1e", "us-east-1f" ]
+    default = [ "us-east-1a", "us-east-1b", "us-east-1c"]
   
 }
 
@@ -42,5 +42,10 @@ variable "desired_size_node" {
   description = "Number of desired nodes"
   type = number
   default = 2
+}
+
+variable "account_id" {
+  description = "aws account id"
+  type = number
 }
 
